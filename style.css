@@ -181,6 +181,10 @@ header {
     justify-content: space-around;
 }
 
+/* .logos img {
+    width: 50%;
+} */
+
 .final {
     margin-top: 100px;
     text-align: center;
@@ -261,8 +265,23 @@ footer .footer-content {
 }
 
 @media screen and (max-width: 768px) {
+    .header .header-title h1 {
+        width: 90%;
+    }
+    
+    .header-text .header-subtitle p {
+        width: 90%;
+        max-width: none;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
     .buttons-header {
         flex-direction: column;
+    }
+
+    .text-primaria {
+        width: 80%;
     }
 
     .secundaria {
@@ -277,6 +296,22 @@ footer .footer-content {
 
     .content-secundaria .list {
         width: 90%;
+        margin-top: 50px;
+    }
+
+    .terciaria .title-terciaria {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+    }
+
+    .terciaria .logo-terciaria {
+        width: 80%;
+    }
+
+    .terciaria .logo-terciaria img {
+        width: 100%;
     }
 
     .quaternaria .infos-quaternaria {
@@ -285,7 +320,7 @@ footer .footer-content {
     }
 
     .infos {
-        width: 90%;
+        width: auto;
     }
 
     .infos:nth-child(2){
@@ -308,6 +343,17 @@ footer .footer-content {
 
     .logos img:first-child {
         margin-top: 0;
+    }
+
+    .final {
+        width: 90%;
+        margin: auto;
+        margin-top: 100px;
+    }
+
+    .final .final-subtitle {
+        max-width: none;
+        width: 90%;
     }
 
     .final-buttons {
@@ -341,7 +387,8 @@ footer .footer-content {
 
     .footer-content .social-media {
         margin-top: 20px;
-        width: 20%;
+        width: 45%;
+        justify-content: space-around;
     }
 }
 
